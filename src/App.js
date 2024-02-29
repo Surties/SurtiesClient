@@ -10,6 +10,7 @@ import {
 import AllRoutes from "./Routes/AllRoutes";
 axios.defaults.withCredentials = true;
 function App() {
+  const mainl = "kk";
   const dispatch = useDispatch();
   const getUser = () => {
     dispatch({

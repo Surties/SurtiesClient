@@ -1,0 +1,16 @@
+* {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+}
+::file-selector-button {
+  margin-right: 20px;
+  margin-top: 1px;
+  border: none;
+  height: 36px;
+  background: #cb202d;
+  padding: 0 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}

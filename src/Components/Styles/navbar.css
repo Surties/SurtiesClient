@@ -1,0 +1,106 @@
+:root {
+  --mainColor: #cb404d;
+  --mainColorLight: #cb404d;
+  --secondaryColor: yellow;
+  --textColor: #eee;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+}
+.navbarLogo {
+  width: 140px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+}
+nav > a {
+  margin: 0 2rem;
+  color: var(--textColor);
+  text-decoration: none;
+}
+nav > a:hover {
+  color: var(--secondaryColor);
+}
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  opacity: 0;
+  font-size: 1.8rem;
+}
+.phoneScreenLogo {
+  width: 140px;
+  position: absolute;
+  top: 10px;
+  left: 2rem;
+}
+.nav-btn {
+  color: yellow;
+}
+.nav-btn:hover {
+  background-color: white;
+  color: var(--mainColor);
+}
+.profileNavBar {
+  display: none;
+}
+.profileIconNav {
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .profileNavBar {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .profileIconNav {
+    display: none;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 0.5s;
+    transform: translateY(-100vh);
+  }
+  header .responsiveNav {
+    transform: none;
+  }
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  nav Link {
+    font-size: 1.5rems;
+    font-weight: 600;
+  }
+}

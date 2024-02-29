@@ -1,0 +1,48 @@
+.footer {
+  background-color: black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  gap: 30px;
+}
+.footerLinks {
+  padding-left: 30px;
+}
+.footerImg {
+  width: 180px;
+  padding: 20px;
+  margin-left: -20px;
+}
+.footerAdress {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    padding: 40px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 640px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 40px;
+  }
+}
+/* Career Css */
+
+.jobProfileSelector {
+  width: 100%;
+  padding: 7px 10px 7px 10px;
+  outline: 1px solid #e2e8f0;
+  border-radius: 5px;
+}
+.jobProfileSelector:focus {
+  outline: 1px solid #cb202d;
+}
